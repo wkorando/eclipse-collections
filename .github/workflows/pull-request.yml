@@ -17,7 +17,7 @@ jobs:
         with:
           website: jdk.java.net
           release: 23
-          version: 23-ea+24
+          version: 23-ea+25
       - name: 'Print outputs'
         shell: bash
         run: |
