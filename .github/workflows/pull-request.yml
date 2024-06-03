@@ -6,10 +6,6 @@ name: Pull Request
 on: [push, pull_request]
 
 jobs:
-  unit-tests:
-    name: Unit Tests
-    runs-on: ubuntu-latest
-
   unit-tests-early-access:
     name: Unit Test Early Access
     runs-on: ubuntu-latest
