@@ -12,11 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download JDK 23 from jdk.java.net
-        uses: wkorando/setup-nojava@v0.1
+        uses: wkorando/setup-java@v0.1
         id: download-jdk
         with:
           website: jdk.java.net
           release: 23
+          version: 23-ea+24
       - name: 'Print outputs'
         shell: bash
         run: |
