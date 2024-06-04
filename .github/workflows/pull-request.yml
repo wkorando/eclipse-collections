@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download JDK 23 from jdk.java.net
-        uses: wkorando/setup-java@v99
+        uses: wkorando/setup-java@main
         id: download-jdk
         with:
           website: jdk.java.net
