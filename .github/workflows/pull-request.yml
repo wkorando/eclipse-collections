@@ -27,6 +27,7 @@ jobs:
       - run: mvn --non-recursive wrapper:wrapper -Dmaven=3.9.6
       - run: java --version
       - name: Unit-Test
-        run: ./mvnw --color=always verify --projects '!p2-repository,!org.eclipse.collections:org.eclipse.collections'
+#        run: ./mvnw --color=always verify --projects '!p2-repository,!org.eclipse.collections:org.eclipse.collections'
+        run: ./mvnw verify
         env:
           MAVEN_OPTS: "-Xmx2g"
