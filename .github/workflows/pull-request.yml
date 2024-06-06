@@ -8,7 +8,7 @@ on: [push, pull_request]
 jobs:
   unit-tests:
     name: Unit Tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20240516.1.0
     steps:
       - uses: actions/checkout@v4
       - run: mvn --non-recursive wrapper:wrapper -Dmaven=3.9.6
